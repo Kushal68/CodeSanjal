@@ -154,13 +154,26 @@
           The sum of 2 and 3 is: 5
         </code></pre>
       </div>
-    </div>
+   
     
-    <!-- <div class="comment-section">
+    <div class="voting-comment-section">
+      <!-- <h2>Voting Section</h2> -->
+      <button><img src="../images/up.png" alt="up" class="up-logo"><span id="upvoteCount">0</span></button>
+      <button><img src="../images/down.png" alt="down" class="down-logo"><span id="downvoteCount">0</span></button>
+      <button><img src="../images/comment.png" alt="comment" class="comment-logo"></button>
+    </div>
+  </div>
+
+    <div class="comment-section">
+      <!-- <h2>Comments Section</h2> -->
       <form>
-        <input type="textfield"
+        <!-- <label for="comment">Your Comment:</label><br> -->
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
       </form>
-    </div> -->
+      <div id="comments"></div>
+    </div>
+  
   </main>
 
   <footer>
@@ -175,8 +188,9 @@
         <div>|</div>
         <div class="footer_info">Terms and services</div>
       </div>
-      <!-- <div class="country">Nepal 🚩</div> -->
+    
     </section>
   </footer>
+
 </body>
 </html>
