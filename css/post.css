@@ -262,10 +262,11 @@ footer {
 /* Styles for comment section */
 .comment-section {
   margin: 20px 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .comment-section form {
-  margin-top: 10px;
+  margin: 10px;
 }
 
 .comment-section textarea {
@@ -280,7 +281,7 @@ footer {
   margin-top: 5px;
   padding: 5px 10px;
   background-color: var(--secondary-color);
-  color: white;
+  color: #ffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -290,10 +291,34 @@ footer {
   background-color: var(--tertiary-color);
 }
 
-.comment-section #comments {
-  margin-top: 10px;
+.comment-view {
+  border: 0.5px solid #d8d8d8;
+  border-radius: 5px;
+  background-color: #e2dfdf;
+  margin-top: 5px;
+}
+.comments {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 5px;
+  background-color: #fff;
+  font-size: 10px;
 }
 
-.comment-section #comments div {
-  margin: 5px 0;
+.img_section {
+  border-radius: 50%;
+  height: 35px;
+  width: 40px;
+}
+
+.comment-display {
+  position: relative;
+  left: 45px;
+  top: -45px;
+}
+
+.comment-display p {
+  font-size: 15px;
+  margin-left: 8px;
 }

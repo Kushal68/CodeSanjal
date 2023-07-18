@@ -118,9 +118,9 @@
       <div class="description-section">
         <h2>Description:</h2>
         <div class="description">
-          <p>The program you provided is a simple C program that calculates the sum of two numbers entered by the user and displays the result.</br>
+          <p>The program you provided is a simple C program that calculates the sum of two numbers entered by the user and displays the result.</p>
 
-          Here's a step-by-step description of the program:</br>
+          Here's a step-by-step description of the program:<br>
           <ol>
            <li>The program starts with the <strong>'#include &lt;stdio.h&gt;'</strong> directive, which includes the standard input/output library in the program. This library provides functions like <strong>'printf()'</strong> and <strong>'scanf()'</strong> that are used for input and output operations.</li>
 
@@ -141,8 +141,7 @@
            <li>The program ends with the <strong>'return 0'</strong>; statement, indicating successful execution and termination of the program.</li> 
           </ol>
           
-          When the program is run, it prompts the user to enter two numbers, calculates their sum, and displays the result on the console.</br>
-         </p>
+          When the program is run, it prompts the user to enter two numbers, calculates their sum, and displays the result on the console.
        </div>
       </div>
 
@@ -160,20 +159,46 @@
       <!-- <h2>Voting Section</h2> -->
       <button><img src="../images/up.png" alt="up" class="up-logo"><span id="upvoteCount">0</span></button>
       <button><img src="../images/down.png" alt="down" class="down-logo"><span id="downvoteCount">0</span></button>
-      <button><img src="../images/comment.png" alt="comment" class="comment-logo"></button>
+      <button><a href="#"><img src="../images/comment.png" alt="comment" class="comment-logo"></a></button>
     </div>
   </div>
 
     <div class="comment-section">
-      <!-- <h2>Comments Section</h2> -->
-      <form>
-        <!-- <label for="comment">Your Comment:</label><br> -->
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
-        <input type="submit" value="Submit">
-      </form>
-      <div id="comments"></div>
+      <div class="comment-view">
+        <form>
+          <textarea id="comment" placeholder="Write a comment..." name="comment" rows="2" cols="50"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+        <div class="comments">
+          <div><img src="../images/dp.JPG" class="img_section"></div>
+          <div class="comment-display">
+            <h3>Kushal Pariyar</h3>
+            <p>This is a sample comment 1.</p>
+          </div>
+          </div>
+          <div class="comments">
+            <div><img src="../images/dp.JPG" class="img_section"></div>
+            <div class="comment-display">
+              <h3>Kushal Pariyar</h3>
+              <p>This is a sample comment 1.</p>
+            </div>
+          </div>
+          <div class="comments">
+            <div><img src="../images/dp.JPG" class="img_section"></div>
+            <div class="comment-display">
+              <h3>Kushal Pariyar</h3>
+              <p>This is a sample comment 1.</p>
+            </div>
+          </div>
+          <div class="comments">
+            <div><img src="../images/dp.JPG" class="img_section"></div>
+            <div class="comment-display">
+              <h3>Kushal Pariyar</h3>
+              <p>This is a sample comment 1.</p>
+            </div>
+          </div>
+      </div>
     </div>
-  
   </main>
 
   <footer>
@@ -188,9 +213,7 @@
         <div>|</div>
         <div class="footer_info">Terms and services</div>
       </div>
-    
     </section>
   </footer>
-
-</body>
+ </body>
 </html>
