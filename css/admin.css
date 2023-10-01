@@ -26,32 +26,164 @@ html {
 body {
   background-color: var(--background-color-1);
 }
+/*----------------------------------Header--------------------------*/
+
 /*----------------------------------Navigation--------------------------*/
 nav {
   width: 100%;
-  background-color: var(--background-color-2);
+  background-color: var(--background-color-1);
   padding-top: 0.5rem;
 }
 .navigation {
-  width: 20%;
-  margin: 0.5rem auto;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
   display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+  /* gap: 67rem; */
+  color: var(--primary-color);
+  /* background-color: aqua; */
   position: relative;
 }
-/*----------------------------------center Navigation--------------------------*/
-.admin_dp {
-  width: 100px;
-  position: relative;
-  margin: 0.5rem auto;
+/*----------------------------------Left Navigation--------------------------*/
+.nav_left {
+  display: flex;
+  font-size: 2.3rem;
+  gap: 4rem;
+  align-items: center;
+  /* order: -1; */
 }
-
-.admin_dp img {
+.logo_text {
+  position: relative;
+  /* margin-top: 0.5rem; */
+  margin-right: 12rem;
+  width: 10rem;
+}
+.cs_text {
+  color: var(--fourth-color);
+  position: absolute;
+  top: 2.2rem;
+  width: 20rem;
+  margin-left: 1rem;
+}
+.cs_text .color_diff {
+  color: var(--secondary-color);
+}
+.cs_logo {
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.hover_effect {
+  /* border-bottom: 2px solid black; */
+  padding-bottom: 0.3rem;
+  cursor: pointer;
+  transition: all 0.1s;
+  /* trans */
+}
+.hover_effect:hover {
+  border-bottom: 1px solid var(--tertiary-color);
+}
+/*----------------------------------Right Navigation--------------------------*/
+.nav_right {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* flex-wrap: wrap; */
+  /* order: 1; */
+}
+.user_dp_section {
+  display: flex;
+}
+.user_dp {
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  border: 2px solid var(--option-input);
+  cursor: pointer;
 }
-
-.admin_info {
-  font-size: 25px;
+.user_dp_section svg {
+  color: var(--primary-color);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.2rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+.bulb {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+.notification {
+  /* padding-top: 1.5rem; */
+  margin-right: 4rem;
+  cursor: pointer;
+}
+.notification svg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+/* body {
+  background-color: #333333;
+}
+h1 {
+  color: #00796b;
+}
+h2 {
+  color: #ff9800;
+} */
+/*--------------------------------------Search Area--------------------*/
+.search_area {
+  /* background-color: #e0e2e5; */
+  /* height: 9rem; */
+  width: 100%;
+  padding-top: 1rem;
+  background-color: var(--background-color-2);
+  color: var(--fourth-color);
+  padding-bottom: 2rem;
+}
+.search_content {
+  width: 80%;
+  margin: 0 auto;
+}
+.search_bar input {
+  width: 35rem;
+  height: 2.8rem;
+  border: 2px solid var(--option-border);
+  color: var(--fourth-color);
+  background-color: var(--option-input);
+}
+.search_bar svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--fourth-color);
+  padding-top: 0.5rem;
+  cursor: pointer;
+  /* margin-top: 0.5rem; */
+}
+/*--------------------------------------Search Content--------------------*/
+.search_text {
+  margin-top: 2rem;
+}
+.search_text h1 {
+  font-size: 2rem;
+  color: var(--fourth-color);
+  margin-bottom: 1.5rem;
+  /* width: 15.5rem;
+  border-bottom: 2px solid #288f8f; */
+}
+.search_text h2 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  /* margin-left: 3rem; */
+}
+.search_keywords,
+.total_results {
+  color: var(--fourth-color);
+  /* color: #39cccc; */
 }
 /*--------------------------------------Code Container--------------------*/
 .code_area {
@@ -62,14 +194,14 @@ nav {
 }
 .code_container {
   width: 80%;
-  margin: 0rem 15rem;
+  margin: 0rem auto;
   padding-top: 2rem;
   display: flex;
   /* height: 10rem; */
   /* background-color: #39cccc; */
 }
-.main_container {
-  width: 100%;
+.left_container {
+  width: 77.5%;
   margin-top: 2rem;
   /* padding-top: 4rem; */
   /* z-index: 20; */
@@ -80,21 +212,30 @@ nav {
   /* height: 20rem; */
   /* width: 20rem; */
 }
-
+.right_container {
+  margin-left: 2rem;
+  width: 18%;
+  display: inline-block;
+  /* background-color: rebeccapurple; */
+  background-color: 20rem;
+  height: 20rem;
+}
 /*--------------------------------------Code box--------------------*/
 .code_box {
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   position: relative;
   display: flex;
   border: 1px solid var(--option-border);
   /* border-opa */
   border-radius: 0.7rem;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 2rem;
   gap: 2rem;
   margin-bottom: 2rem;
   background-color: var(--background-color-2);
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 .img_section {
   display: flex;
@@ -106,20 +247,24 @@ nav {
   font-size: 1.8rem;
   font-weight: lighter;
 }
-.code_section {
+.code_setion {
   width: 20%;
 }
 .review_section {
-  width: 10%;
+  width: 20%;
   font-size: 1rem;
 }
-
+.tick {
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+}
 .img_section img {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
+  /* text-align: center; */
   margin-left: 1.2rem;
-  margin-bottom: 1.2rem;
 }
 .img_section h2 {
   color: var(--tertiary-color);
@@ -135,32 +280,46 @@ nav {
   margin-top: 0.2rem;
   /* padding-left: 8rem; */
 }
-
-.review_section .view,
-.approve,
-.decline {
+.tick svg {
+  width: 4.5rem;
+  height: 4.5rem;
+  color: var(--tertiary-color);
+}
+.review_section .view {
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   background-color: var(--secondary-color);
-  width: 8rem;
+  width: 5rem;
   height: 2rem;
   border-radius: 1rem;
+  padding-left: 0.7rem;
+  padding-top: 0.1rem;
   cursor: pointer;
-  text-align: center;
+  /* padding: 1rem; */
 }
-
-.moderator .review_section .approve,
-.moderator .review_section .decline {
-  margin-left: 19rem;
-}
-
-.review_section .view:hover,
-.approve:hover,
-.decline:hover {
+.review_section .view:hover {
   background-color: var(--tertiary-color);
 }
-
-*--------------------------------------Footer--------------------*/ footer {
+.upvote {
+  color: var(--tertiary-color);
+}
+.comment {
+  color: var(--tertiary-color);
+}
+/*--------------------------------------Filter--------------------*/
+.right_container h1 {
+  font-size: 2.5rem;
+}
+.right_container h2 {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+}
+/*--------------------------------------Footer--------------------*/
+footer {
   background-color: var(--background-color-2);
   width: 100%;
   color: var(--fourth-color);
@@ -168,8 +327,8 @@ nav {
 }
 .foot {
   display: flex;
-  width: 50%;
-  margin: 5rem auto;
+  width: 80%;
+  margin: 0 auto;
   gap: 10rem;
   margin-bottom: 1rem;
   /* justify-content: flex-end; */
@@ -188,4 +347,138 @@ nav {
 .foot .country {
   align-self: flex-end;
   /* justify-content: space-between; */
+}
+
+/*------------------------------switch-------------------------*/
+.main1 {
+  display: none;
+}
+.main2 {
+  display: none;
+}
+.main3 {
+  display: block;
+}
+footer {
+  display: none;
+}
+
+/*---------------------------main 2 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main2 {
+  background-color: var(--background-color-2);
+}
+.main_container {
+  width: 90%;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  display: inline-block;
+  height: 50rem;
+  overflow: auto;
+}
+.review_section .view_profile {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary-color);
+  width: 10rem;
+  height: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.review_section .approve {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary-color);
+  width: 7rem;
+  height: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.review_section .decline {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--secondary-color);
+  width: 6.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.review_section .view_profile:hover,
+.approve:hover,
+.decline:hover {
+  background-color: var(--tertiary-color);
+}
+
+/*---------------------------main 3-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.main3 {
+  background-color: var(--background-color-2);
+}
+.user_portfolio {
+  display: flex;
+  gap: 6rem;
+  width: 75%;
+  padding-top: 5rem;
+  margin: 0rem auto;
+}
+.cleft .user_data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cright {
+  color: var(--fourth-color);
+}
+.boxes {
+  display: flex;
+  margin-left: 30rem;
+}
+/*------------------------------cleft-------------------------*/
+.cleft {
+  color: var(--fourth-color);
+}
+.user_data img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  text-align: center;
+}
+.user_data h1 {
+  font-size: 2rem;
+  margin-left: 5rem;
+  color: var(--tertiary-color);
+}
+.user_data .edit_profile {
+  font-size: 1.2rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+/*--------Code contents----------*/
+.box {
+  width: 16rem;
+  height: 9rem;
+  border-radius: 1rem;
+  background-color: #102e44;
+  color: #39cccc;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+.box:hover {
+  box-shadow: 0 0 10px 5px rgba(57, 204, 204, 0.8);
+}
+
+.content_box {
+  width: 80rem;
+  height: 38.9rem;
+  margin-top: 2rem;
+  overflow: auto;
 }
