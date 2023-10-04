@@ -147,7 +147,7 @@ h3 {
 
 .post-details {
   margin: 0.6rem;
-  background-color: #fff;
+  background-color: var(--option-input);
   padding: 1.2rem;
   border-radius: 0.3rem;
   box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
@@ -156,7 +156,7 @@ h3 {
 /* ---------------------------code-section---------------------- */
 pre {
   margin: 1.2rem;
-  background-color: #f2f2f2;
+  background-color: var(--background-color-2);
   padding: auto;
   overflow-x: auto;
 }
@@ -168,7 +168,7 @@ pre {
 
 .code-box {
   position: relative;
-  background-color: #48cdcd;
+  background-color: var(--secondary-color);
   top: -1.2rem;
   height: 3.5rem;
 }
@@ -178,7 +178,7 @@ pre {
   top: 0.3rem;
   right: 1rem;
   padding: 0.3rem 0.9rem;
-  background-color: #48cdcd;
+  background-color: var(--secondary-color);
   border: none;
   color: #fff;
   font-size: 1.4rem;
@@ -225,7 +225,7 @@ footer {
   cursor: pointer;
 }
 .footer_info:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--fourth-color);
 }
 .foot .country {
   align-self: flex-end;
@@ -236,7 +236,10 @@ footer {
 /* Styles for Voting Buttons */
 .voting-comment-section {
   display: flex;
-  margin-left: 89rem;
+}
+
+.voting-comment-section .user-review {
+  margin-left: 69rem;
 }
 
 .voting-comment-section button {
@@ -287,9 +290,9 @@ footer {
 }
 
 .comment-view {
-  border: 0.03rem solid #d8d8d8;
+  border: 0.03rem solid var(--background-color-2);
   border-radius: 0.5rem;
-  background-color: #e2dfdf;
+  background-color: var(--background-color-2);
   margin-top: 0.5rem;
 }
 .comments {
@@ -338,4 +341,32 @@ footer {
 .comment-logo {
   height: 1.3rem;
   width: 1.3rem;
+}
+
+/*------------------------------------Style for admin view page---------------- */
+.voting-comment-section .admin-review {
+  margin-left: 2rem;
+}
+
+.review input[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  background-color: var(--secondary-color);
+  color: #ffff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-right: 0.6rem;
+}
+
+.review input[type="submit"]:hover {
+  background-color: var(--tertiary-color);
+}
+
+.language_logo img {
+  width: 5%;
+  height: 5%;
+  margin-top: -3rem;
+  margin-left: 97rem;
+  border-radius: 50%;
 }

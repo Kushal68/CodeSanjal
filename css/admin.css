@@ -189,7 +189,8 @@ h2 {
 .code_area {
   width: 100%;
   background-color: var(--background-color-1);
-  color: var(--fourth-color);
+  /* color: red; */
+  /* color: var(--fourth-color); */
   /* background-color: #e0e2e5; */
 }
 .code_container {
@@ -236,6 +237,7 @@ h2 {
   background-color: var(--background-color-2);
   opacity: 0;
   transition: opacity 1s ease;
+  color: var(--fourth-color);
 }
 .img_section {
   display: flex;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post page</title>
+    <title>Admin view page</title>
     <link rel="stylesheet" href="../css/post.css" />
   </head>
   <body>
@@ -93,6 +93,9 @@
       <div class="post-details">
         <div class="title-section">
           <h1>Write a program that provides sum of two numbers in C.</h1>
+          <div class="language_logo">
+            <img src="../images/language_images/javascript.png" />
+          </div>
         </div>
 
         <div class="code-section">
@@ -179,15 +182,30 @@
         </div>
 
         <div class="voting-comment-section">
-          <button><img src="../images/up.png" alt="up" id="up-logo" /></button>
-          <button>
-            <img src="../images/down.png" alt="down" id="down-logo" />
-          </button>
-          <button>
-            <a href="#"
-              ><img src="../images/comment.png" alt="comment" id="comment-logo"
-            /></a>
-          </button>
+          <div class="admin-review">
+            <form class="review">
+              <input type="submit" value="Accept" />
+              <input type="submit" value="Decline" />
+              <input type="submit" value="Verify" />
+            </form>
+          </div>
+
+          <div class="user-review">
+            <button>
+              <img src="../images/up.png" alt="up" id="up-logo" />
+            </button>
+            <button>
+              <img src="../images/down.png" alt="down" id="down-logo" />
+            </button>
+            <button>
+              <a href="#"
+                ><img
+                  src="../images/comment.png"
+                  alt="comment"
+                  id="comment-logo"
+              /></a>
+            </button>
+          </div>
         </div>
       </div>
 

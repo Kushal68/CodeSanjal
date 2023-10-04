@@ -51,14 +51,14 @@ h1 {
 }
 
 .close-btn {
-  position: absolute;
-  right: 41.4rem;
-  top: 19.5rem;
+  position: relative;
+  right: -24rem;
+  top: -2rem;
   font-size: 1.5rem;
   cursor: pointer;
 }
 .close-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 .username {
@@ -89,81 +89,83 @@ input:hover {
 .login {
   width: 95%;
   padding: 0.7rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   border: none;
-  border-radius: 15px;
-  font-size: 16px;
+  border-radius: 1.5rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
 .login:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 .signup {
   width: 25%;
-  padding: 5px;
+  padding: 0.5rem;
   background-color: var(--option-input);
-  color: var(--tertiary-color);
-  border: 1.5px solid var(--tertiary-color);
-  border-radius: 15px;
-  font-size: 15px;
+  color: var(--secondary-color);
+  border: 0.1rem solid var(--secondary-color);
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
 }
 
 .signup:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--option-border);
 }
 
 .btn-separator {
-  width: 100%;
+  width: 85%;
   text-align: center;
-  margin: 20px 20px 20px 0;
-  border-bottom: 1px solid #e0e0e0;
+  margin: 1.7rem 1.7rem 1.7rem 2.9rem;
+  border-bottom: 0.03rem solid #e0e0e0;
   line-height: 0.1rem;
   font-weight: 300;
 }
 
 .btn-separator span {
-  padding: 10px;
+  padding: 0.7rem;
   background: var(--option-input);
   color: #606060;
-  font-size: 12px;
+  font-size: 1.1rem;
 }
 
 /* --------------------------------------------Signup
   Page-------------------------------------- */
 .signup-form {
   background-color: var(--option-input);
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 35%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: 2.8rem;
+  margin-bottom: 3.5rem;
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  border: 1px solid var(--background-color-1);
+  padding: 0.5rem;
+  margin-bottom: 1.1rem;
+  border-radius: 0.3rem;
+  border: 0.09rem solid var(--background-color-1);
 }
 
 button {
-  width: 100%;
-  padding: 10px;
-  background-color: var(--tertiary-color);
+  width: 70%;
+  padding: 0.7rem;
+  background-color: var(--secondary-color);
   color: var(--option-input);
   border: none;
-  border-radius: 3px;
-  font-size: 16px;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
   cursor: pointer;
+  margin-top: 1.5rem;
 }
 
 button:hover {
@@ -171,34 +173,34 @@ button:hover {
 }
 
 .login-link {
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 1.3rem 1.3rem 1.3rem;
+  font-size: 1.4rem;
 }
 
 .login-link a {
-  color: #0095ff;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .upload {
-  width: 100px;
+  width: 8.9rem;
   position: relative;
-  margin: auto auto 20px auto;
+  margin: 1.3rem 1.3rem 1.3rem 16rem;
 }
 
 .upload img {
   border-radius: 50%;
-  border: 3px solid var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
 }
 
 .upload .round {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #00b4ff;
-  width: 32px;
-  height: 32px;
-  line-height: 33px;
+  background: var(--tertiary-color);
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 3.3rem;
   text-align: center;
   border-radius: 50%;
   overflow: hidden;
