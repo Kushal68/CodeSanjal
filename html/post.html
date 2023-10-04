@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Post page</title>
     <link rel="stylesheet" href="../css/post.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <!-- ---------------------------------------navigation---------------------------------------------------------- -->
@@ -88,11 +89,14 @@
       </nav>
     </header>
 
-    <!-- ---------------------------------------------main------------------------------------------ -->
-    <main>
+    <!-- ---------------------------------------------main ------------------------------------------ -->
+    <main class="main">
       <div class="post-details">
         <div class="title-section">
           <h1>Write a program that provides sum of two numbers in C.</h1>
+          <div class="language_logo">
+            <img src="../images/language_images/javascript.png" />
+          </div>
         </div>
 
         <div class="code-section">
@@ -179,15 +183,22 @@
         </div>
 
         <div class="voting-comment-section">
-          <button><img src="../images/up.png" alt="up" id="up-logo" /></button>
-          <button>
-            <img src="../images/down.png" alt="down" id="down-logo" />
-          </button>
-          <button>
-            <a href="#"
-              ><img src="../images/comment.png" alt="comment" id="comment-logo"
-            /></a>
-          </button>
+          <div class="user-review">
+            <button>
+              <img src="../images/up.png" alt="up" id="up-logo" />
+            </button>
+            <button>
+              <img src="../images/down.png" alt="down" id="down-logo" />
+            </button>
+            <button>
+              <a href="#"
+                ><img
+                  src="../images/comment.png"
+                  alt="comment"
+                  id="comment-logo"
+              /></a>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -205,7 +216,7 @@
           </form>
           <div class="comments">
             <div>
-              <img src="../images/dp.JPG" class="img_section" />
+              <img src="../images/dp.JPG" class="comment_img_section" />
               <span class="profile-name">Kushal Pariyar</span>
             </div>
 
@@ -231,7 +242,7 @@
           </div>
           <div class="comments">
             <div>
-              <img src="../images/dp.JPG" class="img_section" />
+              <img src="../images/dp.JPG" class="comment_img_section" />
               <span class="profile-name">Kushal Pariyar</span>
             </div>
 
@@ -257,7 +268,7 @@
           </div>
           <div class="comments">
             <div>
-              <img src="../images/dp.JPG" class="img_section" />
+              <img src="../images/dp.JPG" class="comment_img_section" />
               <span class="profile-name">Kushal Pariyar</span>
             </div>
 
@@ -283,7 +294,7 @@
           </div>
           <div class="comments">
             <div>
-              <img src="../images/dp.JPG" class="img_section" />
+              <img src="../images/dp.JPG" class="comment_img_section" />
               <span class="profile-name">Kushal Pariyar</span>
             </div>
 
@@ -327,4 +338,5 @@
       </section>
     </footer>
   </body>
+  <script src="../js/script.js"></script>
 </html>

@@ -213,8 +213,8 @@ h2 {
   /* width: 20rem; */
 }
 .right_container {
-  margin-left: 2rem;
-  width: 18%;
+  margin-left: 5rem;
+  width: 25%;
   display: inline-block;
   /* background-color: rebeccapurple; */
   background-color: 20rem;
@@ -319,6 +319,11 @@ h2 {
   color: var(--tertiary-color);
 }
 
+/* .right_container label {
+  font-size: 1.6rem;
+  color: var(--tertiary-color);
+} */
+
 /* Previous Button */
 .top-slider .prev-button {
   position: relative;
@@ -344,7 +349,7 @@ h2 {
 /* Next Button */
 .top-slider .next-button {
   position: relative;
-  left: 74rem;
+  left: 67.5rem;
   top: 2rem;
 }
 

@@ -239,7 +239,7 @@ footer {
 }
 
 .voting-comment-section .user-review {
-  margin-left: 69rem;
+  margin-left: 88.2rem;
 }
 
 .voting-comment-section button {
@@ -304,7 +304,7 @@ footer {
   font-size: 0.7rem;
 }
 
-.img_section {
+.comment_img_section {
   border-radius: 50%;
   height: 3.5rem;
   width: 3.7rem;
@@ -346,6 +346,10 @@ footer {
 /*------------------------------------Style for admin view page---------------- */
 .voting-comment-section .admin-review {
   margin-left: 2rem;
+}
+
+.voting-comment-section .admin-user-review {
+  margin-left: 69rem;
 }
 
 .review input[type="submit"] {

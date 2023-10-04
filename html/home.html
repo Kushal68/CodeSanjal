@@ -125,8 +125,8 @@
 
       <section class="code_area">
         <div class="top-slider">
-          <a class="prev-button" href="#"><button>&ltPrevious</button></a>
-          <a class="next-button" href="#"><button>Next&gt</button></a>
+          <a class="prev-button" href="#"><button>&ltPrevious Page</button></a>
+          <a class="next-button" href="#"><button>Next Page&gt</button></a>
         </div>
         <section class="code_container">
           <aside class="left_container">
@@ -324,6 +324,22 @@
 
           <aside class="right_container">
             <h1>Filter:</h1>
+            <h2>Per page:</h2>
+            <input
+              type="range"
+              id="weight"
+              min="0"
+              value="0"
+              max="10"
+              step="1"
+              list="volsettings"
+            />
+            <!-- <datalist id="volsettings">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </datalist> -->
             <h2>Language:</h2>
             <select id="myDropdown">
               <option value="C">Option 1</option>
