@@ -98,6 +98,7 @@ profile.addEventListener("click", function (e) {
   main2.style.display = "block";
   main3.style.display = "none";
 });
+
 /*-------------------------------Lazy Loading-------------------------*/
 
 // Create an intersection observer instance

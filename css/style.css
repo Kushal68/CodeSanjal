@@ -370,9 +370,8 @@ footer {
 .foot {
   display: flex;
   width: 80%;
-  margin: 0 auto;
+  margin: 4rem 12rem 1rem 26rem;
   gap: 10rem;
-  margin-bottom: 1rem;
   /* justify-content: flex-end; */
 }
 .contact_info {
@@ -393,16 +392,16 @@ footer {
 
 /*------------------------------switch-------------------------*/
 .main1 {
-  display: none;
+  display: block;
 }
 .main2 {
   display: none;
 }
 .main3 {
-  display: block;
+  display: none;
 }
 footer {
-  display: none;
+  display: block;
 }
 /*---------------------------main 2 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .main2 {

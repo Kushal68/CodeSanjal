@@ -35,6 +35,19 @@ body {
   height: 100vh;
 }
 
+.cs_logo {
+  height: 12rem;
+  width: 12rem;
+}
+
+/*------------------------------switch-------------------------*/
+.main1 {
+  display: block;
+}
+.main2 {
+  display: none;
+}
+
 /* --------------------------------------------Login
   Page-------------------------------------- */
 .login-form {
@@ -86,7 +99,7 @@ input:hover {
   border: 0.08rem solid;
 }
 
-.login {
+.login_enter {
   width: 95%;
   padding: 0.7rem;
   background-color: var(--secondary-color);
@@ -96,12 +109,13 @@ input:hover {
   cursor: pointer;
 }
 
-.login:hover {
+.login_enter:hover {
   background-color: var(--tertiary-color);
 }
 
 .signup {
-  width: 25%;
+  width: 15%;
+  margin-left: 19rem;
   padding: 0.5rem;
   background-color: var(--option-input);
   color: var(--secondary-color);
@@ -110,6 +124,7 @@ input:hover {
   font-size: 1.5rem;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.1s;
 }
 
 .signup:hover {
@@ -165,7 +180,7 @@ button {
   border-radius: 0.3rem;
   font-size: 1.6rem;
   cursor: pointer;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
 }
 
 button:hover {
@@ -177,9 +192,16 @@ button:hover {
   font-size: 1.4rem;
 }
 
-.login-link a {
+.login {
+  position: relative;
+  top: -1.7rem;
+  left: 10rem;
   color: var(--secondary-color);
-  text-decoration: none;
+  cursor: pointer;
+}
+
+.login:hover {
+  color: var(--tertiary-color);
 }
 
 .upload {

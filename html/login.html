@@ -4,37 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet " type="text/css" href="../css/login-signup.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Login-signup Page</title>
   </head>
   <body>
-    <div class="container">
-      <form class="login-form">
-        <label for="show" class="close-btn fas fa-times" title="close"></label>
-        <h1>Login in to CodeSanjal</h1>
-        <input
-          class="username"
-          type="text"
-          placeholder="Username or Email"
-          required
-        />
-        <input
-          class="password"
-          type="text"
-          placeholder="Password"
-          required
-        />
-        <button class="login" type="submit">Log in</a>
-        </button>
-        <p class="btn-separator">
-          <span>Don't have a CodeSanjal account?</span>
-        </p>
-        
-        <p class="signup-link">
-          <a class="signup" href="signup.html">Sign Up</a>
-        </p>
-      </form>
-    </div>
+    <!-- ----------------------------------------login---------------- -->
+    <main class="main1">
+      <div class="container">
+        <form class="login-form">
+          <label
+            for="show"
+            class="close-btn fas fa-times"
+            title="close"
+          ></label>
+          <h1>Login in to CodeSanjal</h1>
+          <input
+            class="username"
+            type="text"
+            placeholder="Username or Email"
+            required
+          />
+          <input class="password" type="text" placeholder="Password" required />
+          <button class="login_enter" type="submit">Log in</button>
+          <p class="btn-separator">
+            <span>Don't have a CodeSanjal account?</span>
+          </p>
 
+          <div class="signup">Signup</div>
+        </form>
+      </div>
+    </main>
+
+    <!-- ----------------------------------signup------------- -->
+    <main class="main2">
+      <div class="container">
+        <form class="signup-form">
+          <h1>Sign Up</h1>
+          <div class="upload">
+            <img src="../images/profile.png" width="100" height="100" alt="" />
+            <div class="round">
+              <input type="file" />
+              <i class="fa fa-camera" style="color: #fff"></i>
+            </div>
+          </div>
+
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Confirm Password" required />
+
+          <div class="login-link">
+            Already have an account?
+            <div class="login">Login</div>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </main>
   </body>
+  <script src="../js/login.js"></script>
 </html>
