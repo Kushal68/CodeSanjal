@@ -27,6 +27,7 @@ function changeColors() {
     document.documentElement.style.setProperty("--primary-color", "#e6e6e6");
     document.documentElement.style.setProperty("--fourth-color", "#e6e6e6");
     document.documentElement.style.setProperty("--option-input", "#39424e");
+
     svgElement.innerHTML = `<path
     id="myPath"
     stroke-linecap="round"

@@ -153,7 +153,24 @@ h3 {
   box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
 }
 
+.title-section {
+  color: var(--fourth-color);
+}
+
+.language_logo img {
+  width: 5%;
+  height: 5%;
+  margin-top: -3rem;
+  margin-left: 97rem;
+  border-radius: 50%;
+}
+
 /* ---------------------------code-section---------------------- */
+
+.code-section {
+  color: var(--fourth-color);
+}
+
 pre {
   margin: 1.2rem;
   background-color: var(--background-color-2);
@@ -186,19 +203,23 @@ pre {
 }
 
 /* ----------------------------description-section--------------------- */
+.description-section {
+  color: var(--fourth-color);
+}
+
 .description {
   font-size: 1.4rem;
   margin: 1.3rem 1.3rem 1.3rem 2.5rem;
 }
 
-li {
-  padding: 0.3rem;
+/* -------------------------------output-section------------------------ */
+.output-section {
+  color: var(--fourth-color);
 }
 
-/* -------------------------------output-section------------------------ */
 .output {
-  font-family: monospace;
   font-size: 1.3rem;
+  font-family: monospace;
 }
 
 /*--------------------------------------Footer--------------------*/
@@ -261,6 +282,7 @@ footer {
 .comment-section {
   margin: 1.5rem 0.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--fourth-color);
 }
 
 .comment-section form {
@@ -273,6 +295,7 @@ footer {
   border: 0.06rem solid var(--primary-color);
   border-radius: 0.5rem;
   resize: none;
+  background-color: var(--background-color-2);
 }
 
 .comment-section input[type="submit"] {
@@ -290,9 +313,9 @@ footer {
 }
 
 .comment-view {
-  border: 0.03rem solid var(--background-color-2);
+  border: 0.03rem solid var(--option-input);
   border-radius: 0.5rem;
-  background-color: var(--background-color-2);
+  background-color: var(--option-input);
   margin-top: 0.5rem;
 }
 .comments {
@@ -300,7 +323,7 @@ footer {
   border-radius: 0.5rem;
   padding: 0.7rem;
   margin: 0.5rem 0.5rem;
-  background-color: #fff;
+  background-color: var(--background-color-2);
   font-size: 0.7rem;
 }
 
@@ -341,36 +364,4 @@ footer {
 .comment-logo {
   height: 1.3rem;
   width: 1.3rem;
-}
-
-/*------------------------------------Style for admin view page---------------- */
-.voting-comment-section .admin-review {
-  margin-left: 2rem;
-}
-
-.voting-comment-section .admin-user-review {
-  margin-left: 69rem;
-}
-
-.review input[type="submit"] {
-  margin-top: 0.5rem;
-  padding: 0.5rem 0.7rem;
-  background-color: var(--secondary-color);
-  color: #ffff;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin-right: 0.6rem;
-}
-
-.review input[type="submit"]:hover {
-  background-color: var(--tertiary-color);
-}
-
-.language_logo img {
-  width: 5%;
-  height: 5%;
-  margin-top: -3rem;
-  margin-left: 97rem;
-  border-radius: 50%;
 }

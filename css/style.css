@@ -125,15 +125,7 @@ nav {
   width: 3.5rem;
   height: 3.5rem;
 }
-/* body {
-  background-color: #333333;
-}
-h1 {
-  color: #00796b;
-}
-h2 {
-  color: #ff9800;
-} */
+
 /*--------------------------------------Search Area--------------------*/
 .search_area {
   /* background-color: #e0e2e5; */
@@ -349,7 +341,7 @@ h2 {
 /* Next Button */
 .top-slider .next-button {
   position: relative;
-  left: 67.5rem;
+  left: 62rem;
   top: 2rem;
 }
 
