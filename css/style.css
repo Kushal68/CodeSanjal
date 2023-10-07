@@ -304,17 +304,60 @@ nav {
 }
 .right_container h2 {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
   font-size: 1.6rem;
   color: var(--tertiary-color);
 }
 
-/* .right_container label {
-  font-size: 1.6rem;
+.filter {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  background-color: var(--secondary-color);
+  height: 2rem;
+  width: 5rem;
+  border: 0.1rem solid var(--tertiary-color);
+  border-radius: 6rem;
+  cursor: pointer;
+}
+
+/* ---------filterslider-------------- */
+.perPage {
+  position: relative;
+  height: 0rem;
+  top: -2.9rem;
+  left: 13rem;
+}
+
+.rangeValue {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
   color: var(--tertiary-color);
-} */
+  font-weight: 500;
+}
+
+.range {
+  width: 18rem;
+  height: 0.5rem;
+  -webkit-appearance: none;
+  background: var(--option-input);
+  outline: none;
+  border-radius: 2rem;
+  overflow: visible;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  cursor: pointer;
+  border: 0.4rem solid var(--tertiary-color);
+}
 
 /* Previous Button */
 .top-slider .prev-button {
@@ -341,7 +384,7 @@ nav {
 /* Next Button */
 .top-slider .next-button {
   position: relative;
-  left: 62rem;
+  left: 68rem;
   top: 2rem;
 }
 

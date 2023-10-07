@@ -169,6 +169,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -207,6 +208,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -245,6 +247,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -283,6 +286,7 @@
                 </svg>
               </div>
             </div>
+
             <div class="code_box">
               <div class="img_section">
                 <img src="../images/dp.JPG" />
@@ -325,22 +329,23 @@
 
           <aside class="right_container">
             <h1>Filter:</h1>
-            <h2>Per page:</h2>
-            <input
-              type="range"
-              id="weight"
-              min="0"
-              value="0"
-              max="10"
-              step="1"
-              list="volsettings"
-            />
-            <!-- <datalist id="volsettings">
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </datalist> -->
+            <div class="page">
+              <h2>Per page:</h2>
+              <div class="perPage">
+                <span id="rangeValue" class="rangeValue">0</span>
+                <input
+                  class="range"
+                  type="range"
+                  name=""
+                  value="0"
+                  min="0"
+                  max="1000"
+                  onchange="rangeSlide(this.value)"
+                  onmousemove="rangeSlide(this.value)"
+                />
+              </div>
+            </div>
+
             <h2>Language:</h2>
             <select id="myDropdown">
               <option value="C">Option 1</option>
@@ -363,6 +368,9 @@
               <option value="option3">Option 3</option>
               <option value="option4">Option 4</option>
             </select>
+            <div>
+              <input class="filter" type="submit" />
+            </div>
           </aside>
         </section>
       </section>

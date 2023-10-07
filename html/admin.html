@@ -123,6 +123,10 @@
         </section>
       </section>
       <section class="code_area">
+        <div class="top-slider">
+          <a class="prev-button" href="#"><button>&ltPrevious Page</button></a>
+          <a class="next-button" href="#"><button>Next Page&gt</button></a>
+        </div>
         <section class="code_container">
           <aside class="left_container">
             <div class="code_box">
@@ -318,6 +322,22 @@
           </aside>
           <aside class="right_container">
             <h1>Filter:</h1>
+            <div class="page">
+              <h2>Per page:</h2>
+              <div class="perPage">
+                <span id="rangeValue" class="rangeValue">0</span>
+                <input
+                  class="range"
+                  type="range"
+                  name=""
+                  value="0"
+                  min="0"
+                  max="1000"
+                  onchange="rangeSlide(this.value)"
+                  onmousemove="rangeSlide(this.value)"
+                />
+              </div>
+            </div>
             <h2>Language:</h2>
             <select id="myDropdown">
               <option value="C">Option 1</option>

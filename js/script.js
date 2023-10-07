@@ -9,6 +9,7 @@ const home = document.querySelector(".home");
 const post = document.querySelector(".post");
 const profile = document.querySelector(".profile");
 const codeBoxes = document.querySelectorAll(".code_box");
+
 let isColorsChanged = false;
 /*--------------------Change color Section-----------------*/
 
@@ -55,6 +56,10 @@ function changeColors() {
     `;
     isColorsChanged = false;
   }
+}
+// filter range slider//
+function rangeSlide(value) {
+  document.getElementById("rangeValue").innerHTML = value;
 }
 /*--------------------Notification navigation----------------------------------------------------------------------- */
 const notification_icon = document.querySelector(".nav_right .notification");
