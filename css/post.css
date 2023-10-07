@@ -129,7 +129,7 @@ nav {
 /*-----------------------------------------main page--------------------------------*/
 
 main {
-  padding: 0 2rem 2rem 20rem;
+  padding: 0 2rem 2rem 2rem;
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -260,7 +260,7 @@ footer {
 }
 
 .voting-comment-section .user-review {
-  margin-left: 88.2rem;
+  margin-left: 115rem;
 }
 
 .voting-comment-section button {
@@ -289,7 +289,7 @@ footer {
   margin: 0.6rem;
 }
 
-.comment-section textarea {
+.comment-section #comment {
   width: 100%;
   padding: 0.5rem;
   border: 0.06rem solid var(--primary-color);
@@ -349,7 +349,7 @@ footer {
 
 .comment-section-voting {
   display: flex;
-  margin-left: 90rem;
+  margin-left: 117rem;
 }
 .comment-section-voting button {
   border: none;
